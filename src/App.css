@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f6f7f9;
+  padding: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
+  width: "100%";
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: start;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  justify-content: flex-start;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  width: '100%';
 }
 
-.App-link {
-  color: #61dafb;
+.header-item {
+  width: 70px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 8px 8px;
+  cursor: pointer;
+  color: #7777;
+  border: 1px solid #7777;
+  font-size: 0.7rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-button {
+  background-color: #3762e5;
+  color: #ffffff;
+  border: 1px solid #3762e5;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.add-new-keyword {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.add-new-keyword button {
+  border-radius: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.input-box {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.dropdown {
+  appearance: none;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 0.7rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown:hover {
+  background-color: #e0e0e0;
+}
+
+.dropdown:focus {
+  outline: none;
+  border-color: #3762e5;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.sortableItem {
+  padding-top: 8px;
+  text-align: -webkit-center;
 }
